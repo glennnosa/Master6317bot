@@ -13,11 +13,7 @@ public class ShooterCommand extends Command{
 	}
 	
 	protected void execute(){
-		boolean shooting = false;
-		if(shooting)
-			Robot.Shooter.stopShooter();
-		if(!shooting)
-			Robot.Shooter.runShooter();
+		Robot.Shooter.runShooter();
 	}
 
 	@Override
@@ -27,9 +23,11 @@ public class ShooterCommand extends Command{
 
 	@Override
 	protected void end() {
+		Robot.Shooter.stopShooter();
 	}
 
 	@Override
 	protected void interrupted() {
+		Robot.Shooter.stopShooter();
 	}
 }

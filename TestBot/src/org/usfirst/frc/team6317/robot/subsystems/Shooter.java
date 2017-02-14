@@ -13,7 +13,9 @@ public class Shooter extends Subsystem {
 	
 	public void kick(){
 		RobotMap.kickerMotor.set(1);
-		Timer.delay(kickTime);
+	}
+	
+	public void notKick(){
 		RobotMap.kickerMotor.set(0);
 	}
 	

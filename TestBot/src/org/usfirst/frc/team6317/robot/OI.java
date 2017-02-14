@@ -16,8 +16,8 @@ public class OI {
 	Button midLeft = new JoystickButton(leftStick, 5);
 	
 	public OI(){
-		leftTrigger.whenPressed(new KickCommand());
-		rightTrigger.whenPressed(new ShooterCommand());
+		leftTrigger.whileHeld(new KickCommand());
+		rightTrigger.whileHeld(new ShooterCommand());
 		topLeft.whenPressed(new IntakeCommand(1));
 		topRight.whenPressed(new IntakeCommand(2));
 		midLeft.whenPressed(new IntakeCommand(0));

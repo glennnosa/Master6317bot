@@ -11,37 +11,51 @@ public class DriveTrain extends Subsystem {
 	}
 	
 	public void stop(){	//makes the robot stop
-		RobotMap.leftDrive.set(0);
-		RobotMap.rightDrive.set(0);
+		RobotMap.leftDrive1.set(0);
+		RobotMap.rightDrive1.set(0);
+		RobotMap.leftDrive2.set(0);
+		RobotMap.rightDrive2.set(0);
 	}
 	
 	public void forward(){ // makes the robot drive forward
-		RobotMap.leftDrive.set(-1);
-		RobotMap.rightDrive.set(1);
+		RobotMap.leftDrive1.set(-1);
+		RobotMap.rightDrive1.set(1);
+		RobotMap.leftDrive2.set(-1);
+		RobotMap.rightDrive2.set(1);
 	}
 	
 	public void backward(){ //makes the robot drive backwards
-		RobotMap.leftDrive.set(1);
-		RobotMap.rightDrive.set(-1);
+		RobotMap.leftDrive1.set(1);
+		RobotMap.rightDrive1.set(-1);
+		RobotMap.leftDrive2.set(1);
+		RobotMap.rightDrive2.set(-1);
 	}
 	
 	public void left(){ //makes the left side drive forward
-		RobotMap.leftDrive.set(-1);
-		RobotMap.rightDrive.set(0);
+		RobotMap.leftDrive1.set(-1);
+		RobotMap.rightDrive1.set(0);
+		RobotMap.leftDrive2.set(-1);
+		RobotMap.rightDrive2.set(0);
 	}
 	
 	public void right(){ //makes the right side drive forward
-		RobotMap.leftDrive.set(0);
-		RobotMap.rightDrive.set(1);
+		RobotMap.leftDrive1.set(0);
+		RobotMap.rightDrive1.set(1);
+		RobotMap.leftDrive2.set(0);
+		RobotMap.rightDrive2.set(1);
 	}
 	
 	public void clockwise(){ //makes the robot spin clockwise
-		RobotMap.leftDrive.set(-1);
-		RobotMap.rightDrive.set(-1);
+		RobotMap.leftDrive1.set(-1);
+		RobotMap.rightDrive1.set(-1);
+		RobotMap.leftDrive2.set(-1);
+		RobotMap.rightDrive2.set(-1);
 	}
 	
 	public void counterClockwise(){ //makes the robot spin counter clockwise
-		RobotMap.leftDrive.set(1);
-		RobotMap.rightDrive.set(1);
+		RobotMap.leftDrive1.set(1);
+		RobotMap.rightDrive1.set(1);
+		RobotMap.leftDrive2.set(1);
+		RobotMap.rightDrive2.set(1);
 	}
 }

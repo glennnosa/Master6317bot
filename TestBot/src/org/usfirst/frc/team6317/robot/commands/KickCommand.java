@@ -10,7 +10,6 @@ public class KickCommand extends Command{
 	}
 	
 	protected void initialize(){
-		
 	}
 	
 	protected void execute(){
@@ -24,6 +23,7 @@ public class KickCommand extends Command{
 
 	@Override
 	protected void end() {
+		Robot.Shooter.notKick();
 	}
 
 	@Override
