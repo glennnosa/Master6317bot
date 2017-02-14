@@ -7545,3 +7545,9 @@ Caused by: java.net.URISyntaxException: Illegal character in query at index 68: 
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2017-02-14 09:04:15.998
 !MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-14 09:29:20.201
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-14 09:29:20.204
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
